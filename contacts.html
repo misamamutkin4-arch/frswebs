@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакты и бронирование — La Famiglia</title>
+<meta name="description" content="Контакты ресторана La Famiglia: адрес Тверская 15, телефон, часы работы и онлайн-бронирование столика.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,600&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo">La <span>Famiglia</span></a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="contacts.html" class="active">Контакты</a></li>
+      </ul>
+      <a href="contacts.html#booking" class="btn btn-primary nav-cta">Забронировать</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="section section--tight" style="text-align:center;">
+    <div class="container">
+      <span class="eyebrow">Контакты</span>
+      <h1 style="font-size:clamp(2rem,4vw,2.8rem);">Будем рады видеть вас</h1>
+      <p style="max-width:560px;margin:0 auto;">Найдите нас на Тверской или забронируйте столик онлайн — мы перезвоним и подтвердим бронь.</p>
+      <div class="divider"><span></span><span></span></div>
+    </div>
+  </section>
+
+  <section class="section" id="booking">
+    <div class="container contacts-grid">
+
+      <!-- ИНФОРМАЦИЯ -->
+      <div>
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Адрес</h4>
+              <p>Москва, Тверская, 15</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Телефон</h4>
+              <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h4>Часы работы</h4>
+              <p>Ежедневно, 12:00–00:00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- КАРТА-ЗАГЛУШКА -->
+        <div class="map-placeholder">
+          <div class="pin">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="pin-label">Тверская, 15</span>
+          </div>
+        </div>
+        <p class="map-note">Интерактивная карта появится здесь — пока показан схематичный ориентир</p>
+      </div>
+
+      <!-- ФОРМА БРОНИРОВАНИЯ -->
+      <div class="booking-card">
+        <h2 style="font-size:1.6rem;">Забронировать столик</h2>
+        <p style="margin-bottom:26px;">Заполните форму — мы свяжемся с вами для подтверждения брони.</p>
+
+        <form id="bookingForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="date">Дата</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="field">
+              <label for="time">Время</label>
+              <input type="time" id="time" name="time" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="guests">Количество гостей</label>
+            <select id="guests" name="guests" required>
+              <option value="">Выберите</option>
+              <option>1 гость</option>
+              <option>2 гостя</option>
+              <option>3 гостя</option>
+              <option>4 гостя</option>
+              <option>5–6 гостей</option>
+              <option>7+ гостей</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="comment">Комментарий (необязательно)</label>
+            <textarea id="comment" name="comment" placeholder="Пожелания к столику, повод, аллергии..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Забронировать столик</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="logo light">La <span>Famiglia</span></p>
+      <p class="footer-tag">Семейный итальянский ресторан в самом сердце Москвы.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Контакты</h4>
+      <address>
+        Москва, Тверская, 15<br>
+        <a href="tel:+74951234567">+7 (495) 123-45-67</a><br>
+        Ежедневно: 12:00–00:00
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="divider light"><span></span><span></span></div>
+    <p>&copy; 2026 La Famiglia. Все права защищены.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Наверх"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- ВСПЛЫВАШКА -->
+<div class="toast-overlay" id="toastOverlay">
+  <div class="toast-box">
+    <button class="toast-close" id="toastClose" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
+    <i class="fa-solid fa-circle-check"></i>
+    <h3>Спасибо!</h3>
+    <p>Мы перезвоним и подтвердим бронирование в ближайшее время.</p>
+    <button class="btn btn-primary" id="toastOk">Хорошо</button>
+  </div>
+</div>
+
+<script>
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+  burger.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    burger.classList.toggle('open', isOpen);
+    burger.setAttribute('aria-expanded', isOpen);
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open'); burger.classList.remove('open');
+  }));
+
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('show', window.scrollY > 420);
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  // форма бронирования
+  const form = document.getElementById('bookingForm');
+  const overlay = document.getElementById('toastOverlay');
+  const closeToast = () => overlay.classList.remove('show');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    overlay.classList.add('show');
+    form.reset();
+  });
+  document.getElementById('toastClose').addEventListener('click', closeToast);
+  document.getElementById('toastOk').addEventListener('click', closeToast);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) closeToast(); });
+</script>
+</body>
+</html>

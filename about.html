@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>О нас — La Famiglia</title>
+<meta name="description" content="История ресторана La Famiglia, шеф-повар Джованни Росси и наша концепция.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,600&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="logo">La <span>Famiglia</span></a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html" class="active">О нас</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <a href="contacts.html#booking" class="btn btn-primary nav-cta">Забронировать</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="about-hero">
+    <div class="container">
+      <span class="eyebrow">Наша история</span>
+      <h1 style="font-size:clamp(2rem,4vw,2.8rem);">La Famiglia — значит «семья»</h1>
+      <p class="lead">Мы готовим так, как готовили бы для собственной семьи: из свежих продуктов, по рецептам, проверенным не одним поколением, и с искренней любовью к итальянской кухне.</p>
+      <div class="divider"><span></span><span></span></div>
+    </div>
+  </section>
+
+  <!-- ИСТОРИЯ -->
+  <section class="section">
+    <div class="container split">
+      <div class="split-media">
+        <img src="https://picsum.photos/seed/lafamiglia-history/900/700" alt="История ресторана La Famiglia" loading="lazy">
+      </div>
+      <div class="split-text">
+        <span class="eyebrow">С 2014 года</span>
+        <h2>От маленькой траттории — до любимого места Москвы</h2>
+        <p>La Famiglia начиналась как небольшая семейная траттория на несколько столиков, куда заходили «на огонёк» соседи по Тверской. Рецепты, которые сегодня вы найдёте в нашем меню, переехали в Москву вместе с семьей Росси — из маленького городка в Тоскане, где их готовили ещё бабушки.</p>
+        <p>Сегодня La Famiglia выросла, но осталась верна главному: свежим продуктам, открытой кухне и атмосфере, в которой любой гость чувствует себя как дома.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ТАЙМЛАЙН -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Путь ресторана</span>
+        <h2>Главные вехи</h2>
+        <div class="divider"><span></span><span></span></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year">2014</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <h4>Открытие на Тверской</h4>
+            <p>Семья Росси открывает небольшую траттория на 6 столиков с домашним меню и собственной пастой.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2018</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <h4>Обновлённая кухня и зал</h4>
+            <p>Расширение зала, открытая кухня и дровяная печь для пиццы — гости теперь видят процесс приготовления своими глазами.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-body">
+            <h4>Признание гостей города</h4>
+            <p>La Famiglia входит в число самых любимых итальянских ресторанов центра Москвы по версии городских гастро-гидов.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ШЕФ -->
+  <section class="section">
+    <div class="container split reverse">
+      <div class="split-media">
+        <img src="https://picsum.photos/seed/lafamiglia-chef/900/700" alt="Шеф-повар Джованни Росси" loading="lazy">
+      </div>
+      <div class="split-text">
+        <span class="eyebrow">Шеф-повар</span>
+        <h2>Джованни Росси</h2>
+        <p>Джованни вырос на кухне родителей в Тоскане и с детства знал, что станет поваром. После стажировок в Италии и Франции он привёз в Москву не просто рецепты, а философию: главное блюдо делают не специи, а качество продукта и терпение.</p>
+        <p>Сегодня Джованни лично выбирает поставщиков, печёт хлеб по утрам и следит, чтобы каждая тарелка, покидающая кухню, была такой, какую он сам хотел бы получить в гостях.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="chef-quote">
+        <p>«Хорошая кухня начинается не с рецепта, а с уважения к продукту и к гостю, который сядет за стол».</p>
+        <span>— Джованни Росси, шеф-повар La Famiglia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНЦЕПЦИЯ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Наша концепция</span>
+        <h2>Три принципа, на которых всё держится</h2>
+        <div class="divider"><span></span><span></span></div>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar">
+          <i class="fa-solid fa-scroll"></i>
+          <h3>Семейные рецепты</h3>
+          <p>Блюда передаются из поколения в поколение и почти не меняются — мы бережём оригинальный вкус.</p>
+        </div>
+        <div class="pillar">
+          <i class="fa-solid fa-leaf"></i>
+          <h3>Свежие продукты</h3>
+          <p>Овощи и зелень — ежедневные закупки, сыры и оливковое масло — прямые поставки из Италии.</p>
+        </div>
+        <div class="pillar">
+          <i class="fa-solid fa-heart"></i>
+          <h3>Тёплая атмосфера</h3>
+          <p>Мы встречаем каждого гостя так, как встречали бы родственника, который приехал издалека.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center;">
+    <div class="container">
+      <span class="eyebrow">Приходите в гости</span>
+      <h2>Познакомьтесь с La Famiglia лично</h2>
+      <div class="divider"><span></span><span></span></div>
+      <div style="margin-top:28px;">
+        <a href="contacts.html#booking" class="btn btn-primary">Забронировать столик</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="logo light">La <span>Famiglia</span></p>
+      <p class="footer-tag">Семейный итальянский ресторан в самом сердце Москвы.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Навигация</h4>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="menu.html">Меню</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Контакты</h4>
+      <address>
+        Москва, Тверская, 15<br>
+        <a href="tel:+74951234567">+7 (495) 123-45-67</a><br>
+        Ежедневно: 12:00–00:00
+      </address>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="divider light"><span></span><span></span></div>
+    <p>&copy; 2026 La Famiglia. Все права защищены.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Наверх"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+  burger.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    burger.classList.toggle('open', isOpen);
+    burger.setAttribute('aria-expanded', isOpen);
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open'); burger.classList.remove('open');
+  }));
+
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('show', window.scrollY > 420);
+  });
+  backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body>
+</html>
